@@ -1,0 +1,41 @@
+button  {
+  border: 0.5px solid white;
+}
+
+.numbers{ 
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(4, 40px);
+  text-align: center;
+
+}
+
+.operator{
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-rows: repeat(4, 40px);
+  text-align: center;
+}
+
+
+.clavier-numbers{
+  grid-area: clavier-numbers;
+  display: grid;
+  grid-template-areas: "numbers operator";
+  grid-template-columns: 150px 50px;
+  text-align: center;
+}
+
+.delete{
+  grid-area: delete;
+  display: grid;
+  grid-template-columns: 100.5px 99.5px;
+  grid-template-rows: 45px;
+  text-align: center;
+}
+
+.clavier{
+  display: grid;
+  grid-template-areas: "delete "
+  "clavier-numbers";
+}
